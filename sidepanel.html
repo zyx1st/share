@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Personalized Summarizer</title>
+    <link rel="stylesheet" href="sidepanel.css">
+</head>
+<body>
+    <h2>API Key Configuration</h2>
+    <label for="apiKey">LLM API Key:</label>
+    <input type="password" id="apiKey" class="config-input">
+    <button id="saveApiKeyButton">Save API Key</button>
+    <p id="apiKeyStatus" class="status-text"></p>
+
+    <h3>Local LLM Configuration (Future)</h3>
+    <div>
+        <label for="localLlmEndpoint">Local LLM Endpoint:</label>
+        <input type="text" id="localLlmEndpoint" class="config-input" placeholder="e.g., http://localhost:11434/api/generate">
+        <button id="saveLocalLlmEndpointButton">Save Local Endpoint</button>
+        <p id="localLlmStatus" class="status-text">Currently using API Key based LLM.</p>
+    </div>
+    <div>
+        <input type="checkbox" id="useLocalLlmCheckbox">
+        <label for="useLocalLlmCheckbox">Use Local LLM (Experimental - Not yet functional)</label>
+    </div>
+
+    <h2>Profile Management</h2>
+    <label for="userProfile">Your Interests/Profile:</label>
+    <textarea id="userProfile" rows="5" cols="30" placeholder="Enter your interests, keywords, or profile information..."></textarea>
+    <button id="saveProfileButton">Save Profile</button>
+
+    <h2>Document Input</h2>
+    <label for="docName">Document Name (Optional):</label>
+    <input type="text" id="docName">
+
+    <label for="docContent">Document Content:</label>
+    <textarea id="docContent" rows="10" cols="30" placeholder="Paste your document text here..."></textarea>
+    <button id="saveDocButton">Save Document</button>
+
+    <h2>Saved Documents</h2>
+    <div id="docList"></div>
+
+    <button id="summarizeButton">Summarize</button> <!-- Removed (Requires API Key) for now, logic will handle it -->
+
+    <h2>Summary</h2>
+    <div id="summaryOutput" style="border: 1px solid #ccc; padding: 10px; min-height: 100px; background-color: #f9f9f9;"></div>
+
+    <h3>Extracted Quotes</h3>
+    <div id="quotesOutput" style="border: 1px solid #ccc; padding: 10px; min-height: 50px; background-color: #f9f9f9;"></div>
+
+    <script src="sidepanel.js"></script>
+</body>
+</html>

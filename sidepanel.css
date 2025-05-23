@@ -1,0 +1,117 @@
+body {
+    font-family: sans-serif;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Adds space between elements */
+}
+
+h2 {
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+h3 {
+    margin-top: 10px;
+    margin-bottom: 3px;
+}
+
+label {
+    display: block; /* Makes labels take the full width */
+    margin-bottom: 3px;
+    font-weight: bold;
+}
+
+input[type="text"],
+textarea {
+    width: calc(100% - 16px); /* Account for padding/border */
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; /* Makes width include padding and border */
+}
+
+textarea {
+    resize: vertical; /* Allow vertical resizing */
+}
+
+button {
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1em;
+    align-self: flex-start; /* Align buttons to the start of the flex container */
+    margin-top: 5px; /* Add some top margin for buttons */
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#docList {
+    margin-top: 5px; /* Reduced margin as h2 has margin-bottom */
+    padding: 10px;
+    border: 1px solid #eee;
+    border-radius: 4px;
+    min-height: 50px; /* Ensure it's visible even when empty */
+    background-color: #f9f9f9;
+}
+
+#docList ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+#docList li {
+    padding: 5px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #eee;
+}
+
+#docList li:last-child {
+    border-bottom: none;
+}
+
+#docList button {
+    background-color: #dc3545;
+    padding: 5px 10px;
+    font-size: 0.8em;
+    margin-left: 10px;
+}
+
+#docList button:hover {
+    background-color: #c82333;
+}
+
+#summarizeButton {
+    background-color: #28a745; /* Green color for summarize */
+    margin-top: 15px; /* More space before this major action button */
+    margin-bottom: 15px;
+    align-self: center; /* Center the main action button */
+}
+
+#summarizeButton:hover {
+    background-color: #218838;
+}
+
+#summaryOutput,
+#quotesOutput {
+    border: 1px solid #ccc;
+    padding: 10px;
+    min-height: 70px; /* Adjusted min-height */
+    background-color: #f9f9f9;
+    border-radius: 4px;
+    margin-top: 5px;
+    white-space: pre-wrap; /* Preserve line breaks and spaces in output */
+}
+
+#quotesOutput {
+    min-height: 40px; /* Adjusted min-height */
+}

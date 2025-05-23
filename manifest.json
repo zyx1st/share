@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "个性化摘要器",
+  "version": "0.1.0",
+  "description": "根据用户上传的文档和个人资料，使用LLM生成个性化摘要。",
+  "permissions": ["storage", "sidePanel", "scripting"],
+  "side_panel": {
+    "default_path": "sidepanel.html"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_title": "打开摘要器侧边栏"
+  }
+}
