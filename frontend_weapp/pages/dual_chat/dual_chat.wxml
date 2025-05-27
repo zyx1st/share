@@ -1,0 +1,5 @@
+<!-- frontend_weapp/pages/dual_chat/dual_chat.wxml -->
+<view class="container">
+  <text>模块：一起谈 - 敬请期待</text>
+  <button bindtap="goBack" style="margin-top:20px;">返回首页</button>
+</view>

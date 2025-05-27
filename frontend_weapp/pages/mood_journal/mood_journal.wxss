@@ -1,0 +1,2 @@
+/* frontend_weapp/pages/mood_journal/mood_journal.wxss */
+.container { padding: 20px; text-align: center; }

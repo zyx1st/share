@@ -1,0 +1,2 @@
+/* frontend_weapp/pages/dual_chat/dual_chat.wxss */
+.container { padding: 20px; text-align: center; }

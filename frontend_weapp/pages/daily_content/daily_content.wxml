@@ -1,0 +1,5 @@
+<!-- frontend_weapp/pages/daily_content/daily_content.wxml -->
+<view class="container">
+  <text>模块：每日一句/一问 - 敬请期待</text>
+  <button bindtap="goBack" style="margin-top:20px;">返回首页</button>
+</view>

@@ -1,0 +1,2 @@
+/* frontend_weapp/pages/conflict_diagnosis/conflict_diagnosis.wxss */
+.container { padding: 20px; text-align: center; }

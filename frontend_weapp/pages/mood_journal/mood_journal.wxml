@@ -1,0 +1,5 @@
+<!-- frontend_weapp/pages/mood_journal/mood_journal.wxml -->
+<view class="container">
+  <text>模块：心情日记 - 敬请期待</text>
+  <button bindtap="goBack" style="margin-top:20px;">返回首页</button>
+</view>

@@ -1,0 +1,16 @@
+<!--pages/index/index.wxml-->
+<view class="container">
+  <text style="font-size: 24px; font-weight: bold; margin-bottom: 10px;">心犀 MVP</text>
+  <text style="font-size: 16px; color: #666; margin-bottom: 20px;">AI 辅助改善亲密关系</text>
+  
+  <button bindtap="handleLogin" type="primary" style="margin-bottom: 10px;">微信授权登录</button>
+  
+  <view wx:if="{{loginMessage}}" style="margin-top:10px; margin-bottom: 10px; padding: 10px; background-color: #f0f0f0; border-radius: 5px; text-align: center;">
+    <text>{{loginMessage}}</text>
+  </view>
+  
+  <button wx:if="{{loginMessage && loginMessage.includes('successful') || loginMessage.includes('已登录')}}" bindtap="goToChat" type="default" style="margin-bottom: 10px; background-color: #28a745; color: white;">开始聊一聊</button>
+  
+  <!-- Add this button for Help & Support -->
+  <button bindtap="goToSupport" type="default" style="margin-top: 30px; border: 1px solid #ccc;">紧急出口与帮助</button>
+</view>
