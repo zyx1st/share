@@ -1,0 +1,15 @@
+<!--frontend_weapp/pages/chat/chat.wxml-->
+<view class="chat-container">
+  <scroll-view scroll-y="true" class="messages-scroll" style="height: {{scrollHeight}}px;" scroll-into-view="{{scrollToView}}">
+    <block wx:for="{{messages}}" wx:key="index">
+      <view id="msg-{{index}}" class="message-item {{item.sender === 'user' ? 'user-message' : 'ai-message'}}">
+        <view class="message-content">{{item.text}}</view>
+      </view>
+    </block>
+  </scroll-view>
+
+  <view class="input-area">
+    <input class="input-field" value="{{inputValue}}" bindinput="onInput" placeholder="输入你的想法..." />
+    <button class="send-button" bindtap="onSend" disabled="{{isSending}}">发送</button>
+  </view>
+</view>

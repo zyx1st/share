@@ -1,0 +1,2 @@
+/* frontend_weapp/pages/daily_content/daily_content.wxss */
+.container { padding: 20px; text-align: center; }

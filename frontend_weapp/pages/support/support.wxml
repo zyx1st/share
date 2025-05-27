@@ -1,0 +1,42 @@
+<!--frontend_weapp/pages/support/support.wxml-->
+<view class="container">
+  <view class="header">
+    <text>重要声明与紧急支持</text>
+  </view>
+  
+  <view class="content-block">
+    <text class="title">关于心犀（Xinxi）</text>
+    <text class="paragraph">
+      心犀是一款旨在通过AI辅助引导，帮助用户进行情绪梳理和改善伴侣沟通的工具。它提供了一个私密的空间，让您可以进行自我反思和学习沟通技巧。
+    </text>
+    <text class="paragraph important-notice">
+      重要：心犀提供的AI对话和建议不能替代专业的心理咨询或治疗。AI的回答基于预设模式和学习数据，可能无法理解您全部的复杂情况。
+    </text>
+  </view>
+
+  <view class="content-block">
+    <text class="title">寻求专业帮助</text>
+    <text class="paragraph">
+      如果您正经历严重的情感困扰、心理危机、或关系中存在暴力等问题，请务必寻求专业人士的帮助。以下是一些资源（请根据您所在地区替换为真实有效的资源）：
+    </text>
+    <view class="resource-list">
+      <view class="resource-item">
+        <text class="resource-name">全国心理援助热线（示例）:</text>
+        <text class="resource-contact">XXX-XXXXXXX (请替换)</text>
+      </view>
+      <view class="resource-item">
+        <text class="resource-name">某某心理咨询中心（示例）:</text>
+        <text class="resource-contact">访问 www.example-counseling.com (请替换)</text>
+      </view>
+      <view class="resource-item">
+        <text class="resource-name">反家庭暴力热线（示例）:</text>
+        <text class="resource-contact">XXX-XXXXXXX (请替换)</text>
+      </view>
+    </view>
+    <text class="paragraph">
+      请记住，您不是一个人。专业的帮助可以为您提供更深入和个性化的支持。
+    </text>
+  </view>
+
+  <button class="back-button" bindtap="goBack">返回首页</button>
+</view>

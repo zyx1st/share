@@ -1,0 +1,69 @@
+/* frontend_weapp/pages/support/support.wxss */
+.container {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  color: #333;
+  line-height: 1.6;
+}
+
+.header {
+  text-align: center;
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 25px;
+  color: #d9534f; /* A slightly alarming color for "Emergency" */
+}
+
+.content-block {
+  margin-bottom: 20px;
+  padding: 15px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  border: 1px solid #eee;
+}
+
+.title {
+  display: block;
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #0275d8;
+}
+
+.paragraph {
+  display: block;
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+
+.important-notice {
+  color: #d9534f;
+  font-weight: bold;
+  border: 1px dashed #d9534f;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.resource-list {
+  margin-top: 10px;
+}
+
+.resource-item {
+  margin-bottom: 8px;
+  font-size: 15px;
+}
+
+.resource-name {
+  font-weight: bold;
+}
+
+.resource-contact {
+  margin-left: 5px;
+  color: #007bff; /* Link-like color */
+}
+
+.back-button {
+  margin-top: 20px;
+  background-color: #0275d8;
+  color: white;
+}

@@ -1,0 +1,5 @@
+<!-- frontend_weapp/pages/conflict_diagnosis/conflict_diagnosis.wxml -->
+<view class="container">
+  <text>模块：冲突快诊 - 敬请期待</text>
+  <button bindtap="goBack" style="margin-top:20px;">返回首页</button>
+</view>

@@ -1,0 +1,37 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/chat/chat",
+    "pages/support/support",
+    "pages/dual_chat/dual_chat",
+    "pages/conflict_diagnosis/conflict_diagnosis",
+    "pages/learning_center/learning_center",
+    "pages/daily_content/daily_content",
+    "pages/mood_journal/mood_journal"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "心犀",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar": {
+    "list": [{
+      "pagePath": "pages/index/index",
+      "text": "首页"
+    }, {
+      "pagePath": "pages/chat/chat",
+      "text": "聊一聊"
+    }, {
+      "pagePath": "pages/learning_center/learning_center",
+      "text": "小课堂"
+    }, {
+      "pagePath": "pages/mood_journal/mood_journal",
+      "text": "心情"
+    }],
+    "color": "#8a8a8a",
+    "selectedColor": "#0275d8",
+    "backgroundColor": "#ffffff",
+    "borderStyle": "black"
+  }
+}

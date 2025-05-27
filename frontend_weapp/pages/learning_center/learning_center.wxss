@@ -1,0 +1,2 @@
+/* frontend_weapp/pages/learning_center/learning_center.wxss */
+.container { padding: 20px; text-align: center; }
